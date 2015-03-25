@@ -1,0 +1,71 @@
+<!doctype html>
+<head>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+
+    <script>
+        $(function(){
+            $("#series").change(function() {
+                if($(this).val() == "tps") {
+                    console.log($(this).val());
+                    $("#c1").show();
+                    $("#c2").hide();
+                    $("#c3").hide();
+                }
+
+                if($(this).val() == "ncs") {
+                    console.log($(this).val());
+                    $("#c2").show();
+                    $("#c1").hide();
+                    $("#c3").hide();
+                }
+
+                if($(this).val() == "art") {
+                    console.log($(this).val());
+                    $("#c3").show();
+                    $("#c1").hide();
+                    $("#c2").hide();
+                } 
+            });
+        });
+    </script>
+
+</head>
+
+
+<body>
+    <fieldset>
+        <label for="Desired Series">Desired Series:</label>
+        <select id="series" name="series">
+            <option value="tps">CORT Trading Paints Series</option>
+            <option value="ncs">CORT National Cup Series</option>
+            <option value="art">CORT ART Presented by WesHicks.Net</option>
+        </select>
+    </fieldset>
+    <fieldset id="c1">
+        <label for="Manufacturer">Manufacturer:</label>
+        <select>
+            <option>Chevrolet</option>
+            <option>Mercedes-Benz</option>
+            <option>Honda</option>
+            <option>Toyota</option>
+        </select>
+    </fieldset>
+    <fieldset id="c2" style="display:none;">
+        <label for="Manufacturer">Manufacturer:</label>
+        <select>
+            <option>Chevrolet</option>
+            <option>Ford</option>
+        </select>        
+    </fieldset>
+    <fieldset id="c3" style="display:none;">
+        <label for="Manufacturer">Manufacturer:</label>
+        <select>
+            <option>Mazda</option>
+            <option>Mercedes-Benz</option>
+            <option>Toyota</option>
+        </select>
+    </fieldset>
+
+
+</body>

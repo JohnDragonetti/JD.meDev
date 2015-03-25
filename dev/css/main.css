@@ -1,0 +1,607 @@
+/*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+html {font-size: 1em;line-height: 1.4;}
+::-moz-selection {background: #b3d4fc;text-shadow: none;}
+::selection {background: #b3d4fc;text-shadow: none;}
+hr {display: block;height: 1px;border: 0;border-top: 1px solid #ccc;margin: 1em 0;padding: 0;}
+audio,canvas,img,video {vertical-align: middle;}
+fieldset {border: 0;margin: 1em 0;padding: 0;}
+textarea {resize: vertical;width: 420px;border-radius: 2px;}
+.browsehappy {margin: 0.2em 0;background: #ccc;color: #000;padding: 0.2em 0;}
+body {background-color: #bababa;font-family: 'Cantarell', sans-serif;}
+h1 {
+    font-size: 2.7em;
+    font-weight: 300;
+    width: 100%;
+    margin: -.4em 0;
+}
+h2 {font-weight: 300;font-size: 1.9em;margin: 0.4em 0;}
+header {
+    width: 100%;
+    height: 9.4em;
+    color: white;
+    text-align: center;
+    background-image: url('http://weshicks.net/webdev2/img/100-91-5-monochrome.png');
+    background-color: #3f3f3f;
+    border-bottom: 1px solid #535353;
+    position: fixed;
+}
+
+.large {
+    margin-left: -32em;
+    font-size: 3em;
+}
+.small {
+    margin-left: -49em;
+    font-size: 2em;
+}
+.smaller {
+    font-size: 2em;
+    margin-top: -1.38em;
+    margin-left: -29em;
+}
+.header-text {    text-align: center;text-shadow: 0 1px 4px #403742;}
+.active {border-right: 4px solid #00FF0A !important;}
+.center {margin: 0 0 0 38em;width: 65em;height: 2em;}
+nav ul li {margin-bottom: 0.4em;}
+nav {background-color: #919191;}
+nav#main ul {padding: 0;margin: 0 auto;text-align: right;}
+nav#main {
+    width: 1637px;
+    font-size: 1.7em;
+    position: fixed;
+    top: 129px;
+}
+nav#main a {
+    padding-left: 1em;
+    padding-right: .2em;
+    padding-bottom: 0em;
+    text-decoration: none;
+    color: white;
+    border-right: 4px solid #006608;
+}
+nav#main a:hover {
+    /*background-color: #1C7199;
+    box-shadow: inset 0px 0px 7px #003B58;*/
+}
+a.info-box {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+a.info-box:hover {
+    background-color: #302C31;
+}
+.column {
+    width: 1332px;
+    float: left;
+    margin: 13em 1em 3em 2em;
+    position: fixed;
+}
+.main {
+    /*width: 100%;*/
+    height: auto;
+    min-height: 3805px;
+    background-color: #3C3C3C;
+}
+.about {
+    background: #444747;
+    height: 29em;
+    color: #E9E6BD;
+    border-bottom: 1px solid #242424;
+    text-shadow: 0 1px 1px #1D1D1D;
+}
+.abt {
+    margin: 0 auto;
+}
+.info-box {
+    width: 246px;
+    padding: 1em;
+    float: left;
+    background-color: #696969;
+}
+.info-box ul li {
+    margin-left: -3.5em;
+    list-style-type: none;
+}
+
+.header {
+    position: fixed;
+    height: 8.45em;
+    text-shadow: 0 1px 1px #00496D;
+    margin-top: -7em;
+    left: 86%;
+}
+.header h1 {
+    margin-left: -0.2em;
+    margin-top: .7em;
+}
+.header p {
+    font-size: 1.3em;
+}
+.content-testimonial, .content-contact{
+    background-color: #f5f5f5;
+    font-size: 1.45em;
+    padding: 1em;
+}
+.content-contact {
+    overflow: hidden;
+    float: left;
+    margin-bottom: 4em;
+    box-shadow: 0 3px 5px #757575;
+}
+.content {
+    position: relative;
+    margin: 4em 0 0 23em;
+    width: 90em;
+    background-color: #D8D8d8;
+    display: block;
+    box-shadow: 0 5px 5px #888888;
+}
+
+.content-head {
+    background-color: #56445b;
+    color: white;
+    padding: 0.4em 0.6em;
+    font-size: 1.5em;
+}
+.content-body {
+    height: 30em;
+}
+.content-body img {
+    margin: 0.87em;
+    float: left;
+}
+.content-img {
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+    overflow: hidden;
+}
+.alt-content {
+    width: 690px;
+    margin: 3em 1em 3em 2em;
+    box-shadow: 0 3px 5px #757575;
+}
+.alt-content img {
+    width: 690px;
+}
+.alt-contentabout{
+    width: 350px;
+    height: 285px;
+    margin: 0em 0em 1em 14em;
+    box-shadow: 0 3px 5px #757575;
+    overflow: hidden;
+}
+.alt-content .content-head {
+    background-color: #D8D8d8;
+    color: #303030;
+    padding: 0.4em 0.6em;
+    font-size: 1.5rem;
+    overflow: hidden;
+}
+
+.foot {
+    position: relative;
+    margin: 0 auto 0;
+    height: 11.4em;
+    display: block;
+}
+.date {
+    float: right;
+    margin-top: 0.9em;
+    margin-right: -0.2em;
+    color: #818181;
+    font-size: 1rem;
+}
+.latest {
+color: #5F5F5F;
+display:inline-block;
+}
+
+.anchor:before {
+    content: "";
+    display: inline-block;
+    height: 105px;
+    margin: -75px 0 0;
+}
+.stick {
+    position: fixed;
+    top: 0px; 
+}
+.left {
+    position: relative;
+    float: left;
+}
+.right {
+    position: relative;
+    float: right;
+}
+.info {
+    width: 50em;
+}
+.big-box {
+    margin: 1em auto;
+    width: 1000px;
+    box-shadow: 0 3px 5px #757575;
+    background-color: #f5f5f5;
+    font-size: 1.45em;
+    padding: 1em;
+}
+.price-box {
+    margin: 1em auto;
+    width: 1000px;
+    box-shadow: 0 3px 5px #757575;
+    background-color: #f5f5f5;
+    font-size: 1.45em;
+    padding: 1em;
+    margin-bottom: -34em;
+}
+form {width: 880px;}
+label {
+    width: 18em;
+    text-align: right;
+    margin-right: 1em;
+    display: block;
+    float: left;
+}
+
+footer {
+    padding: 0.3em;
+    background: #303030;
+    text-align: right;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+footer a {
+    text-decoration: none;
+    color: #e5e5e5;
+    transition: color 0.5s linear;
+}
+footer a:hover {
+    color: #868686;
+    transition: none;
+}
+
+.slideshow img {
+    max-height: 700px;
+}
+
+.slick-prev:before, .slick-next:before {
+    color: #D4D4D4;
+}
+
+.slick-slide {
+    border: 1px solid #000;
+}
+
+.slideshow img {
+    max-height: 700px;
+    border: 5px solid #919191;
+}
+
+
+.right-col {
+    position: fixed;
+    right: 0;
+    width: 266px;
+    bottom: 0;
+    top: 167px;
+    padding: 5px;
+    background: #919191;
+    box-sizing: border-box;
+    font-size: 21px;
+    overflow: hidden;
+}
+
+.right-col .slick-slide {
+    border: none;
+}
+
+.push-top {
+    margin-top: 45px;
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    /* IE 6/7 fallback */
+    *text-indent: -9999px;
+}
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+.invisible {
+    visibility: hidden;
+}
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+.clearfix:after {
+    clear: both;
+}
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (max-width: 760px) {
+    h1 {
+        width: 100%;
+    }
+    .header img {
+        display: none;
+    }
+    header {
+        width: 99%;
+    }
+    .info-box {
+        width: 95.6%;
+    }
+    
+    .info-box.header {
+        margin-top: 2.7em;
+        position: relative;
+    }
+    
+    .header-text {
+        background-image: url('http://weshicks.net/webdev2/img/100-91-5-monochrome.png');
+        background-color: #896593;
+    }
+
+    .header p {
+        font-size: 1.1em;
+    }
+    .large {
+        font-size: 3.9em;
+        margin: 0 auto;
+    }
+    .small {
+        font-size: 1.6em;
+        float: none;
+        margin: 0 auto;
+    }
+    .smaller {
+        font-size: 1.5em;
+        margin: 0.4em auto;
+
+    }
+    .info {
+        width: 17em;
+        font-size: 0.9em;
+    }
+    .alt-content img {
+        max-width: 420px;
+    }
+    .alt-content {
+        width: 420px;
+    }
+    .alt-content .content-head {
+        font-size: 1rem;
+    }
+    .main {
+        margin-left: 0;
+    }
+    nav {
+
+    }
+    nav#main ul {
+        width: 373px;
+        font-size: 0.9rem;
+    }
+    nav#main ul li {
+        float: left;
+        display: inline-block;
+        margin-bottom: 0.4em;
+    }
+    nav#main {
+        width: 100%;
+        height: 1.3em;
+        min-height: 1.3em;
+        max-height: 1.3em;
+        padding-top: 0.6em;
+        float: left;
+        position: relative;
+        margin-top: -7.9em;
+    }
+
+    .nudge {height: 15em;}    
+    form {
+        width: auto;
+        margin: 0 auto;
+    }
+    label {
+        width: auto;
+        text-align: right;
+        margin-right: 1em;
+        display: block;
+        float: left;
+    }
+
+    input[type="text"] {
+        width: auto;
+    }
+    textarea {
+        width: 280px;
+    }
+    input[type="submit"] {
+        float: right;
+    }
+    .alt-content, .column {
+        width: 98%;
+        margin: 3rem 0.4rem 0 0.4rem;
+    }
+
+}
+
+
+
+@media only screen and (min-width: 761px) and (max-width: 1375px){
+    header {height: 11.4em;}
+    .header-text {font-size: 80%;}
+    .alt-content, .column {
+        width: 100%;
+        max-width: 690px;
+    }
+    .column {margin-left: 0.3em;}
+    .alt-content img {
+        max-width: 100%;
+    }
+}
+
+@media only screen and (min-width: 1376px) and (max-width: 1515px){
+    .alt-content, .column {
+        width: 490px;
+    }
+    .alt-content img {
+        max-width: 100%;
+    }
+}
+
+
+@media only screen and (min-width: 1516px) and (max-width: 1779px){
+    .alt-content, .column {
+        width: 560px;
+    }
+    .alt-content img {
+        max-width: 100%;
+    }
+}
+
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
