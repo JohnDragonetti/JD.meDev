@@ -11,8 +11,8 @@ improvements across the board as development progresses.
 ## Features
 
 * Light weight, Easy-to-use blogging platform
-* Straight-forward page management system.
-* Includes Twitter [Bootstrap v3.3.4](https://github.com/twbs/bootstrap) for Control 
+* Straight-forward page management system
+* Includes [Twitter Bootstrap v3.3.4](https://github.com/twbs/bootstrap) for Control 
 panel styling and grid framework
 * The latest [jQuery](http://jquery.com/) via CDN, with a local fallback.
 
