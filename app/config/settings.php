@@ -1,10 +1,12 @@
 <?php
 error_reporting(E_ALL);
 
-define('DB_NAME', 'DATABASE NAME');
-define('DB_USER', 'DATABASE USER');
-define('DB_PASS', 'DATABASE PASS');
-define('DB_HOST', 'localhost');
+// WH Test database settings
+define('DB_NAME', 'test');
+define('DB_USER', 'root');
+define('DB_PASS', '');
+define('DB_HOST', '127.0.0.1');
+
 define('DIR_APP', dirname(dirname(__FILE__)));
 define('DIR_CLASS', DIR_APP.'/class/');
 define('DIR_SQL', './sql/');
