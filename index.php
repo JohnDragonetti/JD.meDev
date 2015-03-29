@@ -89,17 +89,24 @@ if($request->format == 'json'){
                 $view->render(false);
             } else {
             	// WH General test to make sure that the page the user is trying to access exists 
-                if (file_exists('app/view/' . $request->elements[2] . '.php')) {
+                if (file_exists('app/view/' . $request->elements[1] . '.php')) {
                 	// WH page existed, load page.
-                    $view = new gui\View($settings, $request->elements[2]);
+                    $view = new gui\View($settings, $request->elements[1]);
                     $view->arr_params = $request->elements;
                     $view->render();
                 } else {
-            		// WH Page does not exist. 
-            		// WH Load home page for now. 
-                    $view = new gui\View($settings, 'home');
-                    $view->arr_params = $request->elements;
-                    $view->render();
+            		if(empty($request->elements[1])){ 
+						// WH Load home page for now. 
+        	            $view = new gui\View($settings, 'home');
+            	        $view->arr_params = $request->elements;
+                	    $view->render();	
+            		} else {
+						// WH Dun goofed, page does not exist. 
+						$view = new gui\View($settings, 'fourohfour');
+            	        $view->arr_params = $request->elements;
+                	    $view->render();	
+	        		
+            		}
                 }
             }
             break;
