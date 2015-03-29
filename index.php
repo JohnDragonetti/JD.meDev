@@ -112,5 +112,4 @@ if($request->format == 'json'){
             break;
     }
 }
-
 ?>
