@@ -96,19 +96,10 @@ if($request->format == 'json'){
                     $view->render();
                 } else {
             		// WH Page does not exist. 
-
-
-            		// WH This is for debug only. We will remove this, and replace with a proper error page
-            		// on the live site.
-                    echo 'app/view/' . $request->elements[1] . '.php does not exist';
-                    echo '<pre>';
-                    var_dump($request);
-                    echo '</pre>';
-                    var_dump($_SERVER['QUERY_STRING']);
-                    echo '<br>';
-                    var_dump($_SERVER['PATH_INFO']);
-                    echo '<br>';
-                    var_dump($_SERVER['REQUEST_URI']);
+            		// WH Load home page for now. 
+                    $view = new gui\View($settings, 'home');
+                    $view->arr_params = $request->elements;
+                    $view->render();
                 }
             }
             break;
