@@ -549,15 +549,6 @@ RewriteRule ^/?$ "http\:\/\/johndragonetti\.me\/index\.html" [R=301,L]
 
 
 <IfModule mod_rewrite.c>
-#RewriteEngine On
-#RewriteBase /
-
-#RewriteCond %{REQUEST_FILENAME} !-f
-#RewriteCond %{REQUEST_FILENAME} !-d
-#RewriteRule ^(.*)$ ./index.php/$1 [L]
-
-#RewriteCond %{THE_REQUEST} ^[a-zA-Z]{3,}\ /index\.php/(.*)\  [NC]
-#RewriteRule ^ /simprodev/%1
 
 # Redirect /index.php to /
 RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /.*index\.php
