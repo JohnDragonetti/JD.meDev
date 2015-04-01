@@ -3,14 +3,36 @@ use axion\data;
 
 class Blog {
 	
+
 	function __construct(){}
 
-	private function create_post(){
+	public function create($request){
+		$params = $request->parameters;
+		$title = $params['title'];
+		$body = $params['body'];
+		$category_id = $params['category_id'];
 
+		$data = $this->create_post($title, $body, $category_id);
+
+		$response = array('success'=>true, 'body'=>$data);
+
+		return $response;
+	}
+
+
+	private function create_post($title, $body, $category_id){
+		$db = new data\PDO_DB();
+
+		$insert_id = $db->query('blog/get_by_id.sql')
+			->bind(array(':title'=>$title, ':body'=>$body, ':category_id'=>$category_id))
+			->execute()
+			->insert_id();
+
+		$db->close();
+		return $insert_id;
 	}
 	
-
-
+ 
 	private function get_by_id($blog_id){
 		$db = new data\PDO_DB();
 
