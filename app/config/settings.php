@@ -7,10 +7,12 @@ define('DB_USER', 'root');
 define('DB_PASS', '');
 define('DB_HOST', '127.0.0.1');
 
-define('DIR_APP', dirname(dirname(__FILE__)));
+define('DIR_BASE', dirname(dirname(dirname(__FILE__))).'/');
+define('DIR_APP', DIR_BASE.'app');
 define('DIR_CLASS', DIR_APP.'/class/');
+define('DIR_LIB', DIR_BASE.'lib/');
 define('DIR_SQL', './sql/');
-define('BASE_URL', 'http://axi.onl/Axion/');
+define('BASE_URL', 'http://localhost/JD.meDev/');
 define('SUB_DIR', '/JD.meDev/');
 
 define('LOADED', true);
