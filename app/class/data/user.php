@@ -44,7 +44,7 @@ class User{
 		$db = new data\PDO_DB();
 
 		$ary_user = $db->query('user/get_by_username.sql')
-			->bind(array(':user_id'=>$user_id))
+			->bind(array(':user_id'=>$username))
 			->execute()
 			->fetch();
 
