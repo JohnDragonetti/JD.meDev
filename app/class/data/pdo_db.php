@@ -41,7 +41,10 @@ class PDO_DB {
 
 
     /**
+     * Loads the provided $sql, and prepares it.  
+     *
      * @param string $sql
+     *
      * @return $this
      */
 	public function query($sql){
@@ -50,6 +53,8 @@ class PDO_DB {
 	}
 
     /**
+     * Binds an array of parameters to the query
+     *
      * @param array $ary_params
      * @return $this
      */
@@ -62,25 +67,31 @@ class PDO_DB {
 		return $this;
 	}
 
+    /**
+     * Executes the query
+     *
+     * @return $this
+     */
 	public function execute(){
 		$this->stmt->execute();
 		return $this;
 	}
 
+    /**
+     * Returns all results from the query
+     *
+     * @return mixed
+     */
 	public function fetch(){
 		return $this->stmt->fetchAll();
 	}
 
 
+    /**
+     * Set the connection to null, forcing it to close.
+     */
 	public function close(){
 		$this->pdo = null;
-	}
-
-
-	public function test(){
-		echo '<pre>';
-		var_dump($this->pdo);
-		echo '</pre>';
 	}
 
 	
