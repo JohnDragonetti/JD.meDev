@@ -60,8 +60,7 @@ class View {
      */
     public function render($show_control=true){
         // WH These appear to be backwards, but take a closer look at how build_head() works
-        $this->build_body($show_control)
-            ->build_head();
+        $this->build_body($show_control)->build_head();
         echo $this->page;
     }
     /**
