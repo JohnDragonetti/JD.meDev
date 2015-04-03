@@ -1,11 +1,14 @@
 <?php
 
-
+$this->title='A Bit About Myself';
 
 	/* WH Notice how I only took the relevant content and added it here. 
 	 * We don't need to have the <head> HTML, that's added in the view class
 	 */
 ?>
+
+[[NAV]]
+
 <div class="col-md-6 col-md-push-3">
 	<div class="row">
 		<div class="col-md-12 text-center">

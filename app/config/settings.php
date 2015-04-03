@@ -21,4 +21,4 @@ define('LOADED', true);
 // but I plan on re-writing them to correct this.
 // $settings['sub_dir'] = '/JD.meDev/';
 $settings['js'][] = 'main.js';
-$settings['main_nav'][] = 'test';
+$settings['main_nav'] = array('home', 'about me', 'testimonials');
