@@ -41,7 +41,7 @@ class PDO_DB {
 
 
     /**
-     * Loads the provided $sql, and prepares it.  
+     * Loads the provided $sql, and prepares it.
      *
      * @param string $sql
      *
