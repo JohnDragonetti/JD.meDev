@@ -47,6 +47,7 @@ class Blog_gui extends data\Blog {
         $summary = '<div class="post-summary">';
         $summary .= '<div class="summary-title">'.$ary_post['title'].'</div>';
         $summary .= '<div class="summary-body">'.$ary_post['body'].'</div>';
+        $summary .= '<div class="pull-right summary-read-more"><a href="#">Read more</a></div>';
         $summary .= '</div>';
 
         return $summary;
