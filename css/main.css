@@ -1,3 +1,22 @@
 .container{
     width: 1200px;
 }
+
+
+h2 {
+    font-family: 'Roboto Slab', serif;
+}
+
+.summary-title {
+    font-family: 'Roboto Slab', serif;
+    font-size: 20px;
+}
+
+.summary-body {
+    font-family: 'Open Sans';
+    font-size: 15px;
+}
+
+.post-summary {
+    margin-bottom: 20px;
+}

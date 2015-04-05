@@ -1,4 +1,5 @@
 <?php
+namespace axion\data;
 use axion\data;
 
 class Blog {
