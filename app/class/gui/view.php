@@ -81,6 +81,7 @@ class View {
     <!-- Bootstrap -->
     <!--<link href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300italic,300,700,600,800" rel="stylesheet" type="text/css">-->
     <link href="'.$this->sub_dir.'lib/bootstrap-3.3.4/css/bootstrap.min.css" rel="stylesheet">
+    <link href="http://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700|Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,800,700" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="'.$this->sub_dir.'/css/main.css">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn\'t work if you view the page via file:// -->
