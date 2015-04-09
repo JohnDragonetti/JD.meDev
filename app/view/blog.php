@@ -12,7 +12,7 @@ $blog_gui = new gui\Blog_gui();
 
 $body = $blog_gui->show_all();
 ?>
-
+[[NAV]]
 <div class="container">
 	<div class="row">
 		<div class="col-md-12">
