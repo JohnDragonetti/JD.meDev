@@ -142,7 +142,7 @@ class View {
      * TODO: Pull available pages from a configuration file or database.
      * @return string
      */
-    private function build_nav(){
+    private function build_nav($sidebar=false){
         //WH These links will come from the database depending on the services the client has with us
         //$links = array('Overview','Hosting','Reports', 'SimPro Connect', 'More');
         //$links = array('Overview', 'Web App Development', 'Website Design', 'Search Engine Optimization', 'Domain Name Services', 'Hosting', 'Dream Service');
@@ -150,8 +150,16 @@ class View {
 
         $links = $this->settings['main_nav'];
 //        $str .= '<div class="nav-title">Admin links</div>';
-        $str = '';
-        $str .= '<ul class="nav nav-sidebar">';
+        $str = '<div class="nav main-nav">';
+
+
+        if($sidebar){
+            $str_sidebar = 'nav-sidebar';
+        } else {
+            $str_sidebar = 'navbar-nav';
+        }
+
+        $str .= '<ul class="nav '.$str_sidebar.'">';
         for($i=0; $i<count($links); $i++) {
             $text = $links[$i];
             $link = str_replace(' ', '-', strtolower($links[$i]));
@@ -159,6 +167,9 @@ class View {
             $str .= '<li '.$active.'><a href="'.$this->base_url.$link.'/">'.$text.'</a></li>';
         }
         $str .= '</ul>';
+        $str .= '</div>';
+
+
         return $str;
     }
     /**

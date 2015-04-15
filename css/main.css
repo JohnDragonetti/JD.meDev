@@ -1,3 +1,7 @@
+body {
+    background-color: #3C3C3C;
+}
+
 .container{
     width: 1200px;
 }
@@ -19,4 +23,8 @@ h2 {
 
 .post-summary {
     margin-bottom: 20px;
+}
+
+.main-nav {
+    background: #D0D0D0;
 }
