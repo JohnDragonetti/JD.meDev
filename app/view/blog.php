@@ -18,9 +18,8 @@ $body = $blog_gui->show_all();
 		<div class="col-md-12">
 			<div class="content-main">
                 <h2>Blog goes here</h2>
-
                 <?php
-                echo $body;
+                    echo $body;
                 ?>
             </div>
 		</div>

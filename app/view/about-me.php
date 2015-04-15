@@ -9,12 +9,13 @@ $this->title='A Bit About Myself';
 
 [[NAV]]
 
-<div class="col-md-6 col-md-push-3">
-	<div class="row">
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="content-main">
 		<div class="col-md-12 text-center">
 			<img src="http://weshicks.net/jd/img/profpic.jpg" alt="" class="content-img">
 		</div>
-	</div>
 <p>
 First, I would like to thank you for taking the time to visit my website. I find it of the utmost importance that people know at least the basics of the person they are working with. That is what this is for. So here is a blurb about myself.
 <p>
@@ -24,3 +25,5 @@ Outside of my academic life, I developed a love for racing, and the passion to b
 <p>
 Utilizing Photoshop, I was able to do just that, and even do some designs of my own. As the years past, my skill level grew greatly from simple cars using straight lines, to now intricate designs utilizing curves, gradients, and other different effects. After a risky shift to the iRacing platform, it was here that I was able to obtain many great opportunities not only to race, but design cars for some of the service's best. I've worked with innovators of the service like Steve Luvender and Shawn Brant, creators of the widely used Trading Paints and Race Points Manager programs, as well as a couple others. My biggest break so far was having the priviledge of designing two cars for the iRacing service and NASCAR itself for their NASCAR Race of Champions at the Hall of Fame in early December 2013. 
 </div>
+
+                </div></div>
