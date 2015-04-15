@@ -26,11 +26,22 @@ h2 {
 }
 
 .main-nav {
-    background: #D0D0D0;
+    background: #888;
+}
+.main-nav a {
+    color: #E5E5E5;
 }
 
+.main-nav a:hover {
+    background-color: #797979 !important;
+}
 
 .content-main {
     background: #FEFEFE;
     padding: 15px 30px 60px;
+}
+
+.navbar-nav>li>a {
+    padding-top: 8px;
+    padding-bottom: 9px;
 }

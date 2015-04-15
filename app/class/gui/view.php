@@ -161,7 +161,7 @@ class View {
 
         $str .= '<ul class="nav '.$str_sidebar.'">';
         for($i=0; $i<count($links); $i++) {
-            $text = $links[$i];
+            $text = strtoupper($links[$i]);
             $link = str_replace(' ', '-', strtolower($links[$i]));
             $active = $this->filename === $link ? 'class="active"' : '';
             $str .= '<li '.$active.'><a href="'.$this->base_url.$link.'/">'.$text.'</a></li>';
