@@ -82,6 +82,7 @@ class View {
     <!--<link href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300italic,300,700,600,800" rel="stylesheet" type="text/css">-->
     <link href="'.$this->sub_dir.'lib/bootstrap-3.3.4/css/bootstrap.min.css" rel="stylesheet">
     <link href="http://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700|Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,800,700" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Oswald:400,300,700" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="'.$this->sub_dir.'/css/main.css">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn\'t work if you view the page via file:// -->
@@ -142,7 +143,7 @@ class View {
      * TODO: Pull available pages from a configuration file or database.
      * @return string
      */
-    private function build_nav(){
+    private function build_nav($sidebar=false){
         //WH These links will come from the database depending on the services the client has with us
         //$links = array('Overview','Hosting','Reports', 'SimPro Connect', 'More');
         //$links = array('Overview', 'Web App Development', 'Website Design', 'Search Engine Optimization', 'Domain Name Services', 'Hosting', 'Dream Service');
@@ -150,15 +151,39 @@ class View {
 
         $links = $this->settings['main_nav'];
 //        $str .= '<div class="nav-title">Admin links</div>';
-        $str = '';
-        $str .= '<ul class="nav nav-sidebar">';
+
+        $str = '<header class="main-header">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="content-head">
+                            <div class="page-title">John Dragonetti</div>
+                            <div class="sub-title">Graphic Designer - Digital Media Engineer</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>';
+        $str .= '<div class="nav main-nav">';
+
+
+        if($sidebar){
+            $str_sidebar = 'nav-sidebar';
+        } else {
+            $str_sidebar = 'navbar-nav';
+        }
+
+        $str .= '<ul class="nav '.$str_sidebar.'">';
         for($i=0; $i<count($links); $i++) {
-            $text = $links[$i];
+            $text = strtoupper($links[$i]);
             $link = str_replace(' ', '-', strtolower($links[$i]));
             $active = $this->filename === $link ? 'class="active"' : '';
             $str .= '<li '.$active.'><a href="'.$this->base_url.$link.'/">'.$text.'</a></li>';
         }
         $str .= '</ul>';
+        $str .= '</div>';
+
+
         return $str;
     }
     /**
