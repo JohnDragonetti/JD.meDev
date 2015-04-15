@@ -16,12 +16,13 @@ $body = $blog_gui->show_all();
 <div class="container">
 	<div class="row">
 		<div class="col-md-12">
-			
-			<h2>Blog goes here</h2>
+			<div class="content-main">
+                <h2>Blog goes here</h2>
 
-            <?php
+                <?php
                 echo $body;
-            ?>
+                ?>
+            </div>
 		</div>
 	</div>
 </div>

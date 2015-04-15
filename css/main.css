@@ -28,3 +28,9 @@ h2 {
 .main-nav {
     background: #D0D0D0;
 }
+
+
+.content-main {
+    background: #FEFEFE;
+    padding: 15px 30px 60px;
+}
