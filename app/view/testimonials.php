@@ -12,19 +12,6 @@ $this->title='A Bit About Myself';
 <div class="container">
 
 
-
-
-<div class="row">	
-
-<div class="col-md-12">
-	
-<button class="btn btn-primary"> <span class="glyphicon glyphicon-user"></span> login</button>
-<button class="btn btn-danger"> <span class="glyphicon glyphicon-trash"></span> </button>
-
-</div>
-
-
-</div>
 <div class="row">
 	<div class="col-md-6">
         <div class="panel panel-default">

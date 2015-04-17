@@ -10,6 +10,8 @@ $this->title='Welcome!';
 
 <div class="container">
 	<div class="col-md-12 col-md-push-3">
-		This is where the home page content goes!
+		<div class="content-main">
+            Home page content. We can style this to be anything of course. 
+        </div>
 	</div>
 </div>	
