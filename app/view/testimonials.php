@@ -9,7 +9,7 @@ $this->title='A Bit About Myself';
 
 [[NAV]]
 
-<div class="container">
+<div class="container testimonial-container">
 
 
 <div class="row">
