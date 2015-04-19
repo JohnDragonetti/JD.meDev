@@ -31,11 +31,11 @@ $this->title = 'Contact Me';
                     </div>
                     <div class="form-group">
                         <label for="">Email (if you want a response):</label>
-                        <input type="text" class="form-control"/>
+                        <input type="email" class="form-control" required/>
                     </div>
                     <div class="form-group">
                         <label for="">Message</label>
-                        <textarea class="form-control"></textarea>
+                        <textarea class="form-control" required></textarea>
                     </div>
                     <div class="form-group">
                         <button class="btn btn-primary">Send!</button>
