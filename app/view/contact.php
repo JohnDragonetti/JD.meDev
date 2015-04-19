@@ -7,8 +7,7 @@
  */
 
 
-
-
+$this->title = 'Contact Me';
 ?>
 
 
